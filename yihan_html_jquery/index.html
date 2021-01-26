@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/yihan.css" />
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<div yihan-type="loading" yihan-loading-style="one"></div>
+		<div yihan-type="loading" yihan-loading-style="two"></div>
+		<div yihan-type="loading" yihan-loading-style="three"></div>
+		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/yihan.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			yihan.init(["loading"], function(res) {
+				console.log(res);
+				// showLoading(res[0]);
+				showLoading(res[1]);
+				// showLoading(res[2]);
+			});
+		</script>
+	</body>
+</html>
